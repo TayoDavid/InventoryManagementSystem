@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IMS.LoginPageController">
+   <children>
+      <MenuBar VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" maxHeight="700.0" prefHeight="700.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <items>  
+            <AnchorPane maxHeight="691.0" maxWidth="289.0" prefHeight="691.0" prefWidth="289.0" style="-fx-background-color: #efefee;" SplitPane.resizableWithParent="false">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="260.0" style="-fx-background-color: #efeeee;" text="Virtue Mart" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font name="Chalkboard SE Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="55.0" />
+                  <Button alignment="TOP_LEFT" layoutY="64.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="242.0" style="-fx-background-color: transparent;" text="Dashboard" AnchorPane.topAnchor="64.0">
+                     <font>
+                        <Font name="Chalkboard SE Light" size="16.0" />
+                     </font>
+                  </Button>
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="100.0" />
+                  <ComboBox layoutX="5.0" layoutY="103.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Stores" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="150.0" />
+                  <ComboBox layoutX="6.0" layoutY="153.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Sales" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="200.5" stroke="#c9bfbf" AnchorPane.topAnchor="200.0" />
+                  <ComboBox layoutX="6.0" layoutY="201.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Purchase" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="248.5" stroke="#c9bfbf" AnchorPane.topAnchor="248.0" />
+                  <ComboBox layoutX="6.0" layoutY="247.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Product" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="294.5" stroke="#c9bfbf" AnchorPane.topAnchor="294.0" />
+                  <ComboBox layoutX="7.0" layoutY="295.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Warehouse" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="342.5" stroke="#c9bfbf" AnchorPane.topAnchor="342.0" />
+                  <ComboBox layoutX="6.0" layoutY="343.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Report" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="391.5" stroke="#c9bfbf" AnchorPane.topAnchor="391.0" />
+               </children>
+            </AnchorPane>
+            
+            
+            <VBox prefHeight="670.0" prefWidth="866.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <HBox fillHeight="false" prefHeight="100.0" prefWidth="866.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="100.0" text="Inbox icon">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <HBox maxWidth="180.0" prefHeight="55.0" prefWidth="190.0" style="-fx-border-color: grey; -fx-border-radius: 5; -fx-background-color: #efefee;">
+                           <HBox.margin>
+                              <Insets right="70.0" top="7.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="135.0" style="-fx-border-color: transparent; -fx-border-radius: 10;" text="Product Alert">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: grey; -fx-background-radius: 5;" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets right="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="167.0" style="-fx-background-color: #524590; -fx-background-radius: 15;" text="Point Of Sale" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="170.0" top="7.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="163.0" text="Fetched Username">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox prefHeight="78.0" prefWidth="871.0" style="-fx-background-color: #fffafa;">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="48.0" prefWidth="147.0" text="Sales">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #524590;" text="Add New" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <HBox prefHeight="54.0" prefWidth="871.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="40.0" text="Show">
+                           <HBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox prefHeight="29.0" prefWidth="64.0" promptText="10" style="-fx-background-color: #fff; -fx-border-color: #efefee;">
+                           <HBox.margin>
+                              <Insets right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label layoutX="40.0" layoutY="20.0" prefHeight="27.0" prefWidth="53.0" text="entries">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label prefHeight="27.0" prefWidth="59.0" text="Search:">
+                           <HBox.margin>
+                              <Insets left="300.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField prefHeight="30.0" prefWidth="288.0" style="-fx-background-color: #fff; -fx-border-color: #efefef;">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TableView maxWidth="830.0" prefHeight="220.0" prefWidth="830.0">
+                    <columns>
+                      <TableColumn prefWidth="55.0" text="ID" />
+                      <TableColumn prefWidth="95.0" text="Date" />
+                        <TableColumn prefWidth="75.0" text="Agent" />
+                        <TableColumn prefWidth="75.0" text="Vendor" />
+                        <TableColumn prefWidth="75.0" text="Supp Inv#" />
+                        <TableColumn prefWidth="75.0" text="Memo" />
+                        <TableColumn prefWidth="69.0" text="Type" />
+                        <TableColumn prefWidth="73.0" text="Items" />
+                        <TableColumn prefWidth="83.0" text="Payable" />
+                        <TableColumn prefWidth="88.0" text="Paid" />
+                        <TableColumn prefWidth="66.0" text="View" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <HBox layoutX="10.0" layoutY="264.0" prefHeight="38.0" prefWidth="871.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="187.0" text="Show __ of __ entries">
+                           <HBox.margin>
+                              <Insets left="30.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button maxHeight="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #524590;" text="Previous" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="450.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button maxHeight="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #524590;" text="Next" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="98.0" prefWidth="846.0" style="-fx-background-color: #c5c1c1;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="115.0" prefWidth="366.0" text="© Copyright 2017 Virtue Mart All Right Reserved.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Pane>
+
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+      <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1170.0" spacing="5.0" style="-fx-background-color: grey;" VBox.vgrow="NEVER">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="developed by Omotayo" textFill="#4d4545" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="11.0" fx:id="x3" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin></Pane>
+            <Label font="$x3" maxWidth="-1.0" text="© copyright virtue inc. all right reserved" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin></Label>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

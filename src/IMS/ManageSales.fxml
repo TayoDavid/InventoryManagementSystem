@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IMS.ManageSalesController">
+   <children>
+      <MenuBar VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" maxHeight="700.0" prefHeight="700.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <items>
+            <AnchorPane maxHeight="691.0" maxWidth="289.0" prefHeight="691.0" prefWidth="289.0" style="-fx-background-color: #efefee;" SplitPane.resizableWithParent="false">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="260.0" style="-fx-background-color: #efeeee;" text="Virtue Mart" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font name="Chalkboard SE Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="55.0" />
+                  <Button alignment="TOP_LEFT" layoutY="64.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="242.0" style="-fx-background-color: transparent;" text="Dashboard" AnchorPane.topAnchor="64.0">
+                     <font>
+                        <Font name="Chalkboard SE Light" size="16.0" />
+                     </font>
+                  </Button>
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="100.0" />
+                  <ComboBox fx:id="cmbStores" layoutX="5.0" layoutY="103.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Stores" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="150.0" />
+                  <ComboBox fx:id="cmbSales" layoutX="6.0" layoutY="153.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Sales" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="200.5" stroke="#c9bfbf" AnchorPane.topAnchor="200.0" />
+                  <ComboBox fx:id="cmbPurchases" layoutX="6.0" layoutY="201.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Purchase" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="248.5" stroke="#c9bfbf" AnchorPane.topAnchor="248.0" />
+                  <ComboBox fx:id="cmbProducts" layoutX="6.0" layoutY="247.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Product" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="294.5" stroke="#c9bfbf" AnchorPane.topAnchor="294.0" />
+                  <ComboBox fx:id="cmbWarehouses" layoutX="7.0" layoutY="295.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Warehouse" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="342.5" stroke="#c9bfbf" AnchorPane.topAnchor="342.0" />
+                  <ComboBox fx:id="cmbReport" layoutX="6.0" layoutY="343.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Report" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="391.5" stroke="#c9bfbf" AnchorPane.topAnchor="391.0" />
+               </children>
+            </AnchorPane>
+            <VBox maxHeight="723.0" prefHeight="723.0" prefWidth="871.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <HBox fillHeight="false" prefHeight="80.0" prefWidth="866.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="100.0" text="Inbox icon">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <HBox maxWidth="180.0" prefHeight="55.0" prefWidth="190.0" style="-fx-border-color: grey; -fx-border-radius: 5; -fx-background-color: #efefee;">
+                           <HBox.margin>
+                              <Insets right="70.0" top="7.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="135.0" style="-fx-border-color: transparent; -fx-border-radius: 10;" text="Product Alert">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: grey; -fx-background-radius: 5;" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets right="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="167.0" style="-fx-background-color: #524590; -fx-background-radius: 15;" text="Point Of Sale" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="170.0" top="7.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="163.0" text="Fetched Username">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox maxHeight="70.0" prefHeight="70.0" prefWidth="871.0" style="-fx-background-color: #fffafa;">
+                     <children>
+                        <Label fx:id="storeName" contentDisplay="CENTER" text="Fetch Store Name">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               <Separator prefWidth="200.0" />
+                  <VBox prefHeight="555.0" prefWidth="871.0">
+                     <children>
+                        <GridPane prefHeight="277.0" prefWidth="871.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="110.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="298.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="122.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="78.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label layoutX="10.0" layoutY="66.0" prefHeight="30.0" prefWidth="91.0" text="Category:" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="27.0" prefWidth="112.0" text="Product Name:" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="26.0" prefWidth="87.0" text="Quantity:" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="32.0" prefWidth="82.0" text="Cost:" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="120.0" text="Select Warehouse:" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="btnAddProduct" maxHeight="50.0" maxWidth="140.0" mnemonicParsing="false" onAction="#addProductToTable" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #524590;" text="Add Product" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <TextField fx:id="quantity" maxHeight="30.0" maxWidth="270.0" prefHeight="30.0" prefWidth="280.0" promptText="Enter quantity" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <ComboBox fx:id="warehouses" maxWidth="280.0" prefHeight="30.0" prefWidth="280.0" promptText="Select Warehouse" style="-fx-border-radius: 3;" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </ComboBox>
+                              <Label maxHeight="30.0" maxWidth="100.0" text="Payable:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="payable" maxWidth="280.0" prefHeight="30.0" prefWidth="280.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></TextField>
+                              <TextField fx:id="paid" maxWidth="280.0" onAction="#setSomeFields" prefHeight="30.0" prefWidth="280.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label maxHeight="30.0" maxWidth="100.0" text="Paid:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label maxHeight="30.0" maxWidth="100.0" text="Balance:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="100.0" text="Date:">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <ComboBox fx:id="category" maxWidth="270.0" prefHeight="30.0" prefWidth="270.0" promptText="Category" style="-fx-border-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin></ComboBox>
+                              <ComboBox fx:id="fetchProd" maxWidth="270.0" onAction="#getPrice" prefHeight="30.0" prefWidth="270.0" promptText="Select Product" style="-fx-border-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </ComboBox>
+                              <Label fx:id="added_date" maxHeight="30.0" maxWidth="270.0" style="-fx-background-color: #fff; -fx-border-color: #bbb; -fx-border-radius: 3;" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="cost" layoutX="125.0" layoutY="17.0" maxHeight="30.0" maxWidth="270.0" style="-fx-background-color: #fff; -fx-border-color: #bbb; -fx-border-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="balance" maxHeight="30.0" maxWidth="280.0" style="-fx-background-color: #fff; -fx-border-color: #bbb; -fx-border-radius: 3;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <HBox prefHeight="225.0" prefWidth="871.0">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <TableView fx:id="addedProdTable" maxHeight="220.0" prefHeight="220.0" prefWidth="592.0">
+                                <columns>
+                                  <TableColumn fx:id="tblSerial_number" prefWidth="48.0" text="S/N" />
+                                  <TableColumn fx:id="tblProductName" prefWidth="212.0" text="Product Name" />
+                                    <TableColumn fx:id="tblQuantity" prefWidth="69.0" text="Quantity" />
+                                    <TableColumn fx:id="tblPrice" text="Price" />
+                                    <TableColumn fx:id="tblTax" prefWidth="79.0" text="Tax" />
+                                    <TableColumn fx:id="tblTotal" prefWidth="103.0" text="Total" />
+                                </columns>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TableView>
+                              <Pane maxHeight="220.0" prefHeight="220.0" prefWidth="246.0" style="-fx-background-color: transparent; -fx-background-radius: 20; -fx-border-color: transparent;">
+                                 <HBox.margin>
+                                    <Insets left="12.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <VBox layoutX="2.0" maxHeight="220.0" prefHeight="220.0" prefWidth="242.0" style="-fx-background-color: #efefef; -fx-border-color: #efefff; -fx-background-radius: 20;">
+                                       <children>
+                                          <HBox prefHeight="56.0" prefWidth="242.0">
+                                             <children>
+                                                <Label prefHeight="45.0" prefWidth="144.0" text="Grand Total:">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalAmount" prefHeight="45.0" prefWidth="84.0" text="0.0">
+                                                   <HBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Label prefHeight="27.0" prefWidth="174.0" text="Payment Method">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <ComboBox fx:id="payment_mode" prefHeight="35.0" prefWidth="220.0" promptText="Select Payment Method" style="-fx-background-color: #fff; -fx-border-color: #efefef;">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="10.0" />
+                                             </VBox.margin>
+                                          </ComboBox>
+                                          <HBox prefHeight="56.0" prefWidth="242.0">
+                                             <children>
+                                                <Button fx:id="commitTransaction" mnemonicParsing="false" onAction="#addProductForSale" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #524590;" text="Save" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="printer" mnemonicParsing="false" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #524590;" text="Print" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>

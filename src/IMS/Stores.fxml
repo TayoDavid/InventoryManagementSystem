@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="700.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IMS.LoginPageController">
+   <children>
+      <MenuBar VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" maxHeight="700.0" prefHeight="700.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <items>
+            <AnchorPane maxHeight="691.0" maxWidth="289.0" prefHeight="691.0" prefWidth="289.0" style="-fx-background-color: #efefee;" SplitPane.resizableWithParent="false">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="260.0" style="-fx-background-color: #efeeee;" text="Virtue Mart" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font name="Chalkboard SE Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="55.0" />
+                  <Button alignment="TOP_LEFT" layoutY="64.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="242.0" style="-fx-background-color: transparent;" text="Dashboard" AnchorPane.topAnchor="64.0">
+                     <font>
+                        <Font name="Chalkboard SE Light" size="16.0" />
+                     </font>
+                  </Button>
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="100.0" />
+                  <ComboBox layoutX="5.0" layoutY="103.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Stores" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" stroke="#c9bfbf" AnchorPane.topAnchor="150.0" />
+                  <ComboBox layoutX="6.0" layoutY="153.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Sales" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="200.5" stroke="#c9bfbf" AnchorPane.topAnchor="200.0" />
+                  <ComboBox layoutX="6.0" layoutY="201.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Purchase" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="248.5" stroke="#c9bfbf" AnchorPane.topAnchor="248.0" />
+                  <ComboBox layoutX="6.0" layoutY="247.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Product" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="294.5" stroke="#c9bfbf" AnchorPane.topAnchor="294.0" />
+                  <ComboBox layoutX="7.0" layoutY="295.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Warehouse" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="342.5" stroke="#c9bfbf" AnchorPane.topAnchor="342.0" />
+                  <ComboBox layoutX="6.0" layoutY="343.0" maxHeight="40.0" maxWidth="260.0" prefHeight="40.0" prefWidth="260.0" promptText="Report" style="-fx-background-color: transparent;" />
+                  <Line endX="288.0" layoutY="391.5" stroke="#c9bfbf" AnchorPane.topAnchor="391.0" />
+               </children>
+            </AnchorPane>            
+            <VBox prefHeight="698.0" prefWidth="871.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <HBox fillHeight="false" prefHeight="45.0" prefWidth="866.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="197.0" text="Inbox">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="259.0" text="Fetched Username">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="350.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox prefHeight="50.0" prefWidth="866.0" style="-fx-background-color: #fffafa;">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Stores">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="450.0" prefWidth="871.0">
+                     <children>
+                        <Pane opacity="0.65" prefHeight="43.0" prefWidth="871.0" style="-fx-background-color: #c1eea8; -fx-border-radius: 15px;">
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label layoutX="12.0" layoutY="8.0" prefHeight="29.0" prefWidth="257.0" style="-fx-background-color: #c1eea8;" text="Please select your store" />
+                           </children>
+                        </Pane>
+                        <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #524590;" text="Add New" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="30.0" top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <HBox>
+                           <children>
+                              <Label text="Show">
+                                 <HBox.margin>
+                                    <Insets right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="27.0" prefWidth="66.0" promptText="10" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="64.0" text="entries">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="15.0" text="Search:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="295.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField prefHeight="27.0" prefWidth="280.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="30.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView prefHeight="285.0" prefWidth="811.0">
+                          <columns>
+                            <TableColumn prefWidth="71.0" text="ID" />
+                            <TableColumn prefWidth="79.0" text="Name" />
+                              <TableColumn prefWidth="75.0" text="Category" />
+                              <TableColumn prefWidth="75.0" text="City" />
+                              <TableColumn prefWidth="92.0" text="Phone" />
+                              <TableColumn prefWidth="147.0" text="Email" />
+                              <TableColumn prefWidth="86.0" text="Select" />
+                              <TableColumn prefWidth="82.0" text="Edit" />
+                              <TableColumn prefWidth="103.0" text="Delete" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" top="25.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="40.0" prefWidth="811.0">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Shows number of entries">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #d0c9c9;" text="Previous">
+                           <HBox.margin>
+                              <Insets left="485.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #d0c9c9;" text="Next">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children></HBox>
+                  <Pane prefHeight="100.0" prefWidth="846.0" style="-fx-background-color: #c5c1c1;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="115.0" prefWidth="366.0" text="© Copyright 2017 Virtue Mart All Right Reserved.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </VBox.margin></Pane>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>
